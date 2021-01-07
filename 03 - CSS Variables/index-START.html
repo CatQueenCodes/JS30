@@ -69,6 +69,7 @@
       document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
     }
 
+    //as slider is moved along bar (with preset values it used it in the function above with corresponding attributes);
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate)); //moves as dragging
 
